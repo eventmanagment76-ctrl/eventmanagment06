@@ -1,0 +1,414 @@
+/* Whatspp.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.whatsapp-container{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:9999;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   FLOATING BUTTON
+========================= */
+
+.floating-btn{
+  border:none;
+  outline:none;
+  cursor:pointer;
+  background:#fff;
+  border-radius:50px;
+  box-shadow:0 5px 25px rgba(0,0,0,0.18);
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px 12px 10px 18px;
+  transition:0.3s ease;
+  min-height:60px;
+
+  /* REMOVE MOBILE TAP COLOR */
+  -webkit-tap-highlight-color:transparent;
+}
+
+/* REMOVE HOVER COLOR */
+
+.floating-btn:hover{
+  background:#fff !important;
+}
+
+.floating-btn:hover span{
+  color:#555 !important;
+}
+
+.floating-btn:hover b{
+  color:#222 !important;
+}
+
+/* REMOVE TAP EFFECT */
+
+.floating-btn:focus,
+.floating-btn:focus-visible,
+.floating-btn:active{
+  background:#fff !important;
+  outline:none;
+  box-shadow:0 5px 25px rgba(0,0,0,0.18);
+}
+
+/* REMOVE EXTRA EFFECTS */
+
+.floating-btn::before,
+.floating-btn::after{
+  display:none !important;
+}
+
+/* BUTTON TEXT */
+
+.btn-text{
+  display:flex;
+  gap:4px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.floating-btn span{
+  font-size:16px;
+  color:#181717;
+}
+
+.floating-btn b{
+  font-size:16px;
+  color:#222;
+}
+
+/* =========================
+   BUTTON WHATSAPP ICON
+========================= */
+
+.btn-icon{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.btn-icon i{
+  color:#fff;
+  font-size:30px;
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.floating-btn.active{
+  width:58px;
+  height:58px;
+  min-width:58px;
+  min-height:58px;
+  border-radius:50%;
+  padding:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#25D366 !important;
+  color:#fff !important;
+  font-size:32px;
+  box-shadow:0 5px 25px rgba(0,0,0,0.18);
+}
+
+.floating-btn.active:focus,
+.floating-btn.active:active,
+.floating-btn.active:hover{
+  background:#25D366 !important;
+  color:#fff !important;
+}
+
+/* =========================
+   CHAT BOX
+========================= */
+
+.chat-box{
+  width:360px;
+  max-width:calc(100vw - 30px);
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 10px 40px rgba(0,0,0,0.18);
+  position:absolute;
+  bottom:80px;
+  right:0;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(20px);
+  transition:0.3s ease;
+}
+
+.chat-box.show{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.chat-header{
+  background:#25D366;
+  padding:20px;
+  color:#fff;
+}
+
+.header-top{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+
+/* HEADER WHATSAPP ICON */
+
+.whatsapp-icon{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.whatsapp-icon i{
+  color:#25D366;
+  font-size:30px;
+}
+
+.header-content{
+  flex:1;
+  min-width:0;
+}
+
+.chat-header h3{
+  font-size:25px;
+  margin-bottom:10px;
+  font-weight:700;
+  line-height:1.2;
+  word-break:break-word;
+}
+
+.chat-header p{
+  font-size:15px;
+  line-height:1.5;
+  word-break:break-word;
+}
+
+/* =========================
+   REPLY TEXT
+========================= */
+
+.reply-text{
+  background:#f2f2f2;
+  color:#666;
+  padding:16px 20px;
+  font-size:16px;
+  line-height:1.5;
+}
+
+/* =========================
+   TEAM MEMBER
+========================= */
+
+.team-member{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 20px;
+  text-decoration:none;
+  background:#fff;
+  transition:0.3s;
+}
+
+.team-member:hover{
+  background:#f8f8f8;
+}
+
+.member-left{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+/* MEMBER WHATSAPP ICON */
+
+.member-icon{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:#4CAF50;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.member-icon i{
+  color:#fff;
+  font-size:24px;
+}
+
+.member-left span{
+  color:#131111;
+  font-size:13px;
+  font-weight:600;
+}
+
+/* RIGHT ICON */
+
+.member-right{
+  color:#4CAF50;
+  font-size:24px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:768px){
+
+  .chat-box{
+    width:340px;
+  }
+
+  .chat-header h3{
+    font-size:26px;
+  }
+
+  .chat-header p{
+    font-size:16px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:480px){
+
+  .whatsapp-container{
+    right:10px;
+    left:10px;
+    bottom:14px;
+    display:flex;
+    justify-content:flex-end;
+  }
+
+  .chat-box{
+    width:100%;
+    max-width:340px;
+    right:0;
+    left:auto;
+    bottom:75px;
+  }
+
+  .chat-header{
+    padding:16px;
+  }
+
+  .header-top{
+    gap:10px;
+  }
+
+  .whatsapp-icon{
+    width:42px;
+    height:42px;
+  }
+
+  .whatsapp-icon i{
+    font-size:26px;
+  }
+
+  .chat-header h3{
+    font-size:22px;
+    line-height:1.2;
+  }
+
+  .chat-header p{
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .reply-text{
+    font-size:14px;
+    line-height:1.5;
+    padding:14px 16px;
+  }
+
+  .team-member{
+    padding:14px 16px;
+  }
+
+  .member-left{
+    gap:10px;
+  }
+
+  .member-icon{
+    width:38px;
+    height:38px;
+  }
+
+  .member-icon i{
+    font-size:20px;
+  }
+
+  .member-left span{
+    font-size:16px;
+  }
+
+  .member-right{
+    font-size:22px;
+  }
+
+  .floating-btn{
+    padding:8px 10px 8px 14px;
+    gap:10px;
+    min-height:56px;
+  }
+
+  .btn-text{
+    flex-direction:row;
+    gap:4px;
+  }
+
+  .floating-btn span,
+  .floating-btn b{
+    font-size:14px;
+    white-space:nowrap;
+  }
+
+  .btn-icon{
+    width:46px;
+    height:46px;
+  }
+
+  .btn-icon i{
+    font-size:26px;
+  }
+
+  .floating-btn.active{
+    width:56px;
+    height:56px;
+    min-width:56px;
+    min-height:56px;
+    font-size:28px;
+  }
+}
