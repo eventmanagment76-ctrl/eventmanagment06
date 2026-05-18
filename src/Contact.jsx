@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useRef } from "react";
 import "./Contact.css";
 import Center from "./Center";
@@ -211,3 +212,14 @@ function Contact() {
 }
 
 export default Contact;
+=======
+import React from 'react'
+
+function Contact() {
+  return (
+    <div>Contact</div>
+  )
+}
+
+export default Contact
+>>>>>>> 1d39347 (local changes)

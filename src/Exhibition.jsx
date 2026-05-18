@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ExhibitionSection.jsx
 
 import React, { useEffect, useState } from "react";
@@ -305,3 +306,14 @@ export default function ExhibitionSection() {
     </div>
   );
 }
+=======
+import React from 'react'
+
+function Exhibition() {
+  return (
+    <div>Exhibition</div>
+  )
+}
+
+export default Exhibition
+>>>>>>> 1d39347 (local changes)

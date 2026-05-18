@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ConferenceSection.jsx
 
 import React, { useEffect, useState } from "react";
@@ -311,3 +312,14 @@ export default function Corporate() {
     </div>
   );
 }
+=======
+import React from 'react'
+
+function Corporate() {
+  return (
+    <div>Corporate</div>
+  )
+}
+
+export default Corporate
+>>>>>>> 1d39347 (local changes)

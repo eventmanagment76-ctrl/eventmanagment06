@@ -11,6 +11,10 @@ body{
   background:#111;
 }
 
+<<<<<<< HEAD
+=======
+/* SECTION */
+>>>>>>> 1d39347 (local changes)
 .about-section{
   width:100%;
 
@@ -32,6 +36,10 @@ body{
   position:relative;
 }
 
+<<<<<<< HEAD
+=======
+/* LIGHT OVERLAY */
+>>>>>>> 1d39347 (local changes)
 .about-section::before{
   content:"";
   position:absolute;
@@ -49,6 +57,10 @@ body{
   pointer-events:none;
 }
 
+<<<<<<< HEAD
+=======
+/* CONTAINER */
+>>>>>>> 1d39347 (local changes)
 .about-container{
   max-width:1180px;
   margin:auto;
@@ -63,18 +75,30 @@ body{
   z-index:2;
 }
 
+<<<<<<< HEAD
+=======
+/* LEFT */
+>>>>>>> 1d39347 (local changes)
 .about-left{
   flex:1;
   max-width:500px;
 }
 
 .small-title{
+<<<<<<< HEAD
   color:#f4eded;
+=======
+  color:#ff6a2f;
+>>>>>>> 1d39347 (local changes)
   font-size:13px;
   font-weight:700;
   letter-spacing:3px;
 }
 
+<<<<<<< HEAD
+=======
+/* HEADING */
+>>>>>>> 1d39347 (local changes)
 .about-left h1{
   font-size:58px;
   line-height:1.02;
@@ -84,6 +108,10 @@ body{
   font-weight:800;
 }
 
+<<<<<<< HEAD
+=======
+/* PARAGRAPH */
+>>>>>>> 1d39347 (local changes)
 .about-left p{
   font-size:15px;
   line-height:1.9;
@@ -92,6 +120,7 @@ body{
   margin-bottom:24px;
 }
 
+<<<<<<< HEAD
 
 button {
   background: linear-gradient(135deg, #ff0000, #b30000);
@@ -126,6 +155,40 @@ button:hover {
 button:hover a {
   color: #00d9ff;
 }
+=======
+/* BUTTON */
+.about-left button{
+  background:linear-gradient(
+  90deg,
+  #ff6a2f,
+  #ff2f63
+  );
+
+  color:white;
+  border:none;
+
+  padding:14px 32px;
+  border-radius:14px;
+
+  font-size:16px;
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:
+  transform .35s ease,
+  box-shadow .35s ease;
+}
+
+.about-left button:hover{
+  transform:translateY(-4px);
+
+  box-shadow:
+  0 12px 25px rgba(255,82,43,0.25);
+}
+
+/* RIGHT */
+>>>>>>> 1d39347 (local changes)
 .about-right{
   flex:1;
   position:relative;
@@ -133,6 +196,10 @@ button:hover a {
   min-height:560px;
 }
 
+<<<<<<< HEAD
+=======
+/* CENTER CIRCLE */
+>>>>>>> 1d39347 (local changes)
 .circle-bg{
   position:absolute;
 
@@ -154,12 +221,20 @@ button:hover a {
   0 0 70px rgba(255,145,77,0.08);
 }
 
+<<<<<<< HEAD
+=======
+/* CARD */
+>>>>>>> 1d39347 (local changes)
 .info-card{
   position:absolute;
 
   width:300px;
 
+<<<<<<< HEAD
   background:rgba(255,255,255,0.10);
+=======
+  background:rgb(255, 255, 255);
+>>>>>>> 1d39347 (local changes)
 
   backdrop-filter:blur(12px);
   -webkit-backdrop-filter:blur(12px);
@@ -178,6 +253,10 @@ button:hover a {
   box-shadow:
   0 10px 35px rgba(0,0,0,0.20);
 
+<<<<<<< HEAD
+=======
+  /* ENTRY ANIMATION */
+>>>>>>> 1d39347 (local changes)
   opacity:0;
 
   animation-duration:1.2s;
@@ -190,6 +269,10 @@ button:hover a {
   border .35s ease;
 }
 
+<<<<<<< HEAD
+=======
+/* SHINY EFFECT */
+>>>>>>> 1d39347 (local changes)
 .info-card::before{
   content:"";
   position:absolute;
@@ -214,6 +297,10 @@ button:hover a {
   left:130%;
 }
 
+<<<<<<< HEAD
+=======
+/* HOVER EFFECT */
+>>>>>>> 1d39347 (local changes)
 .info-card:hover{
   transform:translateY(-8px) scale(1.02);
 
@@ -223,6 +310,10 @@ button:hover a {
   0 18px 35px rgba(0,0,0,0.30);
 }
 
+<<<<<<< HEAD
+=======
+/* CARD POSITIONS + DELAY */
+>>>>>>> 1d39347 (local changes)
 .card-0{
   top:0;
   left:0;
@@ -249,12 +340,17 @@ button:hover a {
   animation-delay:0.8s;
 }
 
+<<<<<<< HEAD
+=======
+/* ICON */
+>>>>>>> 1d39347 (local changes)
 .icon{
   font-size:22px;
   color:#ff3b30;
   margin-bottom:14px;
 }
 
+<<<<<<< HEAD
 .info-card h3{
   font-size:25px;
   margin-bottom:14px;
@@ -269,6 +365,24 @@ button:hover a {
   color:#ededed;
 }
 
+=======
+/* CARD TITLE */
+.info-card h3{
+  font-size:20px;
+  margin-bottom:14px;
+  line-height:1.3;
+  color:rgb(248, 10, 10);
+}
+
+/* CARD TEXT */
+.info-card p{
+  font-size:14px;
+  line-height:1.8;
+  color:#191818;
+}
+
+/* LEFT TO RIGHT */
+>>>>>>> 1d39347 (local changes)
 @keyframes slideLeft{
 
   from{
@@ -282,6 +396,10 @@ button:hover a {
   }
 }
 
+<<<<<<< HEAD
+=======
+/* RIGHT TO LEFT */
+>>>>>>> 1d39347 (local changes)
 @keyframes slideRight{
 
   from{
@@ -295,6 +413,10 @@ button:hover a {
   }
 }
 
+<<<<<<< HEAD
+=======
+/* BOTTOM TO TOP */
+>>>>>>> 1d39347 (local changes)
 @keyframes slideBottom{
 
   from{
@@ -308,6 +430,10 @@ button:hover a {
   }
 }
 
+<<<<<<< HEAD
+=======
+/* TABLET */
+>>>>>>> 1d39347 (local changes)
 @media(max-width:992px){
 
   .about-section{
@@ -361,6 +487,10 @@ button:hover a {
   }
 }
 
+<<<<<<< HEAD
+=======
+/* MOBILE */
+>>>>>>> 1d39347 (local changes)
 @media(max-width:576px){
 
   .about-section{

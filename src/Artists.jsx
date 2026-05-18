@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import React, { useEffect, useState } from "react";
 import "./Conference.css";
@@ -261,3 +262,14 @@ export default function ArtistsEntertainment() {
 
   );
 }
+=======
+import React from 'react'
+
+function Artists() {
+  return (
+    <div>Artists</div>
+  )
+}
+
+export default Artists
+>>>>>>> 1d39347 (local changes)

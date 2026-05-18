@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Clients.jsx
 
 import React from "react";
@@ -7,6 +8,10 @@ import n2 from "./assets/n2.png";
 import n3 from "./assets/n3.png";
 import n4 from "./assets/n4.jpg";
 import n5 from "./assets/n5.webp";
+=======
+import React from "react";
+import "./Client.css";
+>>>>>>> 1d39347 (local changes)
 
 import biocon from "./assets/biocon.jpg";
 import calibraint from "./assets/calibraint.webp";
@@ -25,6 +30,7 @@ import travel from "./assets/travel.webp";
 import zebronics from "./assets/zebronics.webp";
 import sleek from "./assets/sleek.webp";
 
+<<<<<<< HEAD
 
 
 
@@ -68,10 +74,28 @@ function Clients() {
 
         <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
 
+=======
+function Clients() {
+  const logos = [
+    biocon, calibraint, cisco, cube, hyundai, deloitte,
+    dji, herbalife, muthoot, nokia, ola, tcs,
+    shaddi, travel, zebronics, sleek
+  ];
+
+  const duplicated = [...logos, ...logos];
+
+  return (
+    <section className="clients">
+
+      {/* FULL WIDTH WAVE */}
+      <div className="wave">
+        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+>>>>>>> 1d39347 (local changes)
           <path
             fill="#ffffff"
             d="M0,80C240,140,480,0,720,40C960,80,1200,140,1440,80V0H0Z"
           />
+<<<<<<< HEAD
 
         </svg>
 
@@ -107,6 +131,28 @@ function Clients() {
 
     </section>
 
+=======
+        </svg>
+      </div>
+
+      {/* INNER WRAPPER */}
+      <div className="clients-inner">
+
+        <h2>Our Clients</h2>
+
+        <div className="slider">
+          <div className="slide-track">
+            {duplicated.map((logo, index) => (
+              <div className="slide" key={index}>
+                <img src={logo} alt="client" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </section>
+>>>>>>> 1d39347 (local changes)
   );
 }
 

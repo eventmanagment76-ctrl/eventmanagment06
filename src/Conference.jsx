@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import "./Conference.css";
 
+<<<<<<< HEAD
 import con1 from "./assets/con1.jpg";
 import con3 from "./assets/con3.jpg";
 import con15 from "./assets/con15.jpg";
@@ -29,11 +30,19 @@ import a7 from "./assets/a7.jpeg";
 import con17 from "./assets/con17.jpg";
 import conference13 from "./assets/conference13.png";
 
+=======
+import eventImg1 from "./assets/eventImg.jpg";
+ import blog3 from "./assets/blog3.jpg";
+ import blog4 from "./assets/blog4.jpg";
+import blog1 from "./assets/blog1.png";
+import blog5 from "./assets/blog5.jpg";
+>>>>>>> 1d39347 (local changes)
 import Solutions from "./Solution";
 
 export default function ConferenceSection() {
 
   // ALL IMAGES
+<<<<<<< HEAD
   const imagelist = [
     {
       img: con11,
@@ -81,6 +90,13 @@ export default function ConferenceSection() {
     con1,
     con3,
     con15
+=======
+  const images = [
+    eventImg1,
+    blog3,
+    blog4,
+    blog1
+>>>>>>> 1d39347 (local changes)
   ];
 
   // CURRENT IMAGE
@@ -105,6 +121,7 @@ export default function ConferenceSection() {
 
   return (
     <div>
+<<<<<<< HEAD
 
      
 
@@ -118,12 +135,48 @@ export default function ConferenceSection() {
               key={index}
               src={img}
               alt="banner"
+=======
+    <section className="conference-section">
+
+      {/* HEADING */}
+      <div className="conference-heading">
+        <span>OUR SERVICES</span>
+        <h1>Corporate Conferences & Events</h1>
+      </div>
+
+      {/* CARD */}
+      <div className="conference-card">
+
+      
+        {/* <div className="conference-content">
+          <h2> Conference  Event Management</h2>
+
+          <p>
+            We organize premium corporate conferences, seminars,
+            business meetings, product launches, and networking
+            events with complete planning and execution. Our team
+            ensures seamless coordination, modern event setups,
+            and memorable experiences that reflect your brand
+            professionally.
+          </p>
+        </div> */}
+
+        {/* IMAGE SLIDER */}
+        <div className="conference-image">
+
+          {images.map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              alt="Conference Event"
+>>>>>>> 1d39347 (local changes)
               className={
                 index === currentImage
                   ? "slider-image active"
                   : "slider-image"
               }
             />
+<<<<<<< HEAD
 
           ))}
           <h1> conference Managment</h1>
@@ -314,5 +367,64 @@ export default function ConferenceSection() {
       </section>
 
     </div>
+=======
+          ))}
+
+        </div>
+        </div>
+    </section>
+
+    <section className="why-sectionn">
+
+      {/* LEFT IMAGE */}
+      <div className="why-image">
+
+        <img src={blog5} alt="Conference Event" />
+
+        {/* SLIDER BUTTON */}
+        <button className="slider-btn">
+          →
+        </button>
+
+      </div>
+
+      {/* RIGHT CONTENT */}
+      <div className="why-content">
+
+        <h1>Why Us?</h1>
+
+        <div className="why-text">
+
+          <p>
+            <strong>25 Years of Expertise:</strong> Leverage our extensive
+            experience and in-depth industry knowledge for your conference.
+          </p>
+
+          <p>
+            <strong>Comprehensive In-House Services:</strong> From audio-visual
+            equipment to stage setups and participant management, our
+            in-house capabilities ensure consistency and quality.
+          </p>
+
+          <p>
+            <strong>Customized Solutions:</strong> Tailored services to meet
+            your unique needs, ensuring your conference reflects your brand
+            and message.
+          </p>
+
+          
+
+        </div>
+
+      </div>
+
+    </section>
+        <section>
+      <Solutions/>
+    </section>
+
+   </div>
+    
+>>>>>>> 1d39347 (local changes)
   );
 }

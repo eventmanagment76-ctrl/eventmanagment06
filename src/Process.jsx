@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 
+=======
+// ProcessSection.jsx
+>>>>>>> 1d39347 (local changes)
 
 import React from "react";
 import "./Process.css";
 
+<<<<<<< HEAD
+=======
+// ICONS
+>>>>>>> 1d39347 (local changes)
 import {
   CalendarCheck,
   Palette,
@@ -50,6 +58,10 @@ export default function ProcessSection() {
 
     <section className="process-section">
 
+<<<<<<< HEAD
+=======
+      {/* HEADER */}
+>>>>>>> 1d39347 (local changes)
       <div className="process-header">
 
         <span className="tag">
@@ -67,8 +79,15 @@ export default function ProcessSection() {
 
       </div>
 
+<<<<<<< HEAD
       <div className="timeline-line"></div>
 
+=======
+      {/* TIMELINE */}
+      <div className="timeline-line"></div>
+
+      {/* PROCESS */}
+>>>>>>> 1d39347 (local changes)
       <div className="process-grid">
 
         {processData.map((item, index) => (
@@ -81,6 +100,10 @@ export default function ProcessSection() {
             }}
           >
 
+<<<<<<< HEAD
+=======
+            {/* TOP ICON */}
+>>>>>>> 1d39347 (local changes)
             <div className="top-design">
 
               <div className="number-circle">
@@ -93,6 +116,10 @@ export default function ProcessSection() {
 
             </div>
 
+<<<<<<< HEAD
+=======
+            {/* CONTENT */}
+>>>>>>> 1d39347 (local changes)
             <div className="card-content">
 
               <h2>{item.title}</h2>

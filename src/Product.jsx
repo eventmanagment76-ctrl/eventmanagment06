@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ProductLaunchSection.jsx
 
 import React, { useEffect, useState } from "react";
@@ -317,3 +318,14 @@ export default function ProductLaunches() {
     </div>
   );
 }
+=======
+import React from 'react'
+
+function Product() {
+  return (
+    <div>Product</div>
+  )
+}
+
+export default Product
+>>>>>>> 1d39347 (local changes)

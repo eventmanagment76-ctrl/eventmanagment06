@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ExperientialMarketingSection.jsx
 
 import React, { useEffect, useState } from "react";
@@ -285,3 +286,14 @@ export default function ExperientialMarketingSection() {
     </div>
   );
 }
+=======
+import React from 'react'
+
+function Team() {
+  return (
+    <div>Team</div>
+  )
+}
+
+export default Team
+>>>>>>> 1d39347 (local changes)

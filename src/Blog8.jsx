@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./Blog1.css";
 import te12 from "./assets/te12.jpg";
@@ -313,3 +314,14 @@ function Blog8() {
 }
 
 export default Blog8;
+=======
+import React from 'react'
+
+function Blog8() {
+  return (
+    <div>Blog8</div>
+  )
+}
+
+export default Blog8
+>>>>>>> 1d39347 (local changes)

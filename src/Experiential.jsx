@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ConferenceSection.jsx
 
 import React, { useEffect, useState } from "react";
@@ -309,3 +310,14 @@ export default function Experiential() {
 
   );
 }
+=======
+import React from 'react'
+
+function Experiential() {
+  return (
+    <div>Experiential</div>
+  )
+}
+
+export default Experiential
+>>>>>>> 1d39347 (local changes)

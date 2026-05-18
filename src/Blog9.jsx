@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./Blog1.css";
 import pro10 from "./assets/pro10.jpg";
@@ -339,3 +340,14 @@ function Blog9() {
 }
 
 export default Blog9;
+=======
+import React from 'react'
+
+function Blog9() {
+  return (
+    <div>Blog9</div>
+  )
+}
+
+export default Blog9
+>>>>>>> 1d39347 (local changes)

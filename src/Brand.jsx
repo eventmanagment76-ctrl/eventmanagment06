@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // BrandActivationSection.jsx
 
 import React, { useEffect, useState } from "react";
@@ -290,3 +291,14 @@ export default function BrandActivationSection() {
     </div>
   );
 }
+=======
+import React from 'react'
+
+function Brand() {
+  return (
+    <div>Brand</div>
+  )
+}
+
+export default Brand
+>>>>>>> 1d39347 (local changes)

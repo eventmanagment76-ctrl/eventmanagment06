@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 *{
@@ -550,10 +551,398 @@ text-align: center;
   to{
     transform:translateY(0);
     opacity:1;
+=======
+/* ONLY ABOUT PAGE */
+.about .banner {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  background: url("https://images.unsplash.com/photo-1506157786151-b8491531f063")
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      rgba(28, 28, 29, 0.8),
+      rgba(0, 0, 0, 0.95)
+    ),
+    radial-gradient(circle at center, rgba(255, 0, 150, 0.2), transparent 60%);
+  z-index: 1;
+}
+
+.about .overlay::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: about-shine 8s linear infinite;
+}
+
+.about .banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fc0808;
+  animation: about-fadeUp 1.5s ease;
+  backdrop-filter: blur(6px);
+  padding: 20px 50px;
+  border-radius: 12px;
+}
+
+.about .banner-content h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.about .banner-content p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #e6e1c5;
+}
+
+/* 🔥 DIAGONAL DIVIDER IMPROVED */
+.diagonal-divider {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(135deg, #5e4836, #303031);
+  clip-path: polygon(0 60%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* ABOUT SECTION (REDUCED HEIGHT) */
+.about .about-section {
+  width: 100%;
+  padding: 50px 0; /* 🔥 reduced from 80px */
+  background: linear-gradient(90deg, #4a3e2b, #17111b);
+  color: #fff;
+}
+
+/* CONTAINER */
+.about .about-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px; /* reduced gap */
+}
+
+/* LEFT TEXT */
+.about .about-text {
+  flex: 1;
+}
+
+.about .about-text h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #e6e1c5;
+}
+
+.about .line {
+  width: 60px;
+  height: 3px;
+  background: red;
+  margin: 12px 0 20px;
+}
+
+.about .about-text p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+/* RIGHT IMAGE */
+.about .about-image {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.about .about-image img {
+  width: 100%;
+  height: 360px; /* reduced */
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.about .about-image:hover img {
+  transform: scale(1.05);
+}
+
+/* HIGHLIGHT */
+.about .highlight {
+  width: 100%;
+  padding: 80px 20px;
+   background: linear-gradient(90deg, #4a3e2b, #17111b);
+  text-align: center;
+}
+
+.about .highlight h1 {
+  font-size: 36px;
+  color: #ccc;
+}
+
+.about .highlight-text {
+  color: #f40000;
+}
+
+.about .highlight p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #fcf9f9;
+}
+
+/* 🔥 PREMIUM FEATURES SECTION */
+.about .features {
+  position: relative;
+  padding: 100px 20px;
+
+  /* IMAGE + PURPLE OVERLAY */
+  background:
+    linear-gradient(
+      rgba(34, 34, 34, 0.85),
+      rgba(24, 24, 24, 0.9)
+    ),
+    url("/src/assets/bgv.jpeg") center/cover no-repeat;
+
+  overflow: hidden;
+}
+
+
+.about .features-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* GLASS CARD */
+.about .feature-card {
+  position: relative;
+  padding: 35px 25px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.953);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+/* ICON */
+.about .icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+/* TEXT */
+.about .feature-card h3 {
+  font-size: 20px;
+  color: #ed0505;
+  margin-bottom: 10px;
+}
+
+.about .feature-card p {
+  font-size: 14px;
+  color: #121111;
+}
+
+/* HOVER EFFECT */
+.about .feature-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  border-color: rgba(255, 0, 120, 0.4);
+  box-shadow: 0 20px 40px rgba(255, 0, 120, 0.15);
+}
+
+.about .feature-card:hover .icon {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px rgba(255, 0, 120, 0.6));
+}
+
+/* TOP GRADIENT LINE */
+.about .feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #ff0055, #ff7a00, #ff00c8);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.about .feature-card:hover::before {
+  opacity: 1;
+}
+
+/* LIGHT EFFECT */
+.about .feature-card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 60%);
+  opacity: 0;
+}
+
+.about .feature-card:hover::after {
+  opacity: 1;
+}
+/* SECTION (smaller height) */
+.vision-mission {
+  width: 100%;
+  padding: 70px 20px;
+   background: linear-gradient(90deg, #4a3e2b, #17111b);
+  color: #fff;
+}
+
+/* HEADER */
+.vm-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.vm-header h5 {
+  letter-spacing: 3px;
+  color: #fd0808;
+  font-size: 13px;
+}
+
+.vm-header h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* ROW */
+.vm-row {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+/* CARDS */
+.vm-card {
+  padding: 30px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: 0.4s ease;
+  position: relative;
+}
+
+/* LEFT ANIMATION */
+.vm-card.left {
+  transform: translateX(-40px);
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+}
+
+/* RIGHT ANIMATION */
+.vm-card.right {
+  transform: translateX(40px);
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+/* HOVER */
+.vm-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 0, 0, 0.2);
+}
+
+/* TEXT */
+.vm-card h4 {
+  color: #f40404;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.vm-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.vm-card p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* CENTER LINE (INFOGRAPHIC STYLE) */
+.vm-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.vm-line span {
+  width: 2px;
+  height: 120px;
+  background: linear-gradient(#ff4d6d, transparent);
+  position: relative;
+}
+
+/* DOT */
+.vm-line span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  width: 12px;
+  height: 12px;
+  background: #ff4d6d;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 10px #cd0202;
+}
+
+/* ANIMATIONS */
+@keyframes slideLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+>>>>>>> 1d39347 (local changes)
   }
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -652,4 +1041,72 @@ text-align: center;
     animation:fadeUp 1s ease forwards;
   }
 
+=======
+/* ANIMATIONS */
+@keyframes about-fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes about-shine {
+  from {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  to {
+    transform: translateX(100%) rotate(25deg);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .about .about-container {
+    flex-direction: column;
+  }
+
+  .about .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about .features-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about .banner-content h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 900px) {
+  .vm-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .vm-line {
+    display: none;
+  }
+
+  .vm-card.left,
+  .vm-card.right {
+    animation: fadeUp 1s ease forwards;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+>>>>>>> 1d39347 (local changes)
 }

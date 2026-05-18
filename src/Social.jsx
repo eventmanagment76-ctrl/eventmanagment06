@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ConferenceSection.jsx
 
 import React, { useEffect, useState } from "react";
@@ -306,3 +307,14 @@ export default function Social() {
   );
 
 }
+=======
+import React from 'react'
+
+function Social() {
+  return (
+    <div>Social</div>
+  )
+}
+
+export default Social
+>>>>>>> 1d39347 (local changes)

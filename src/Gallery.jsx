@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./Gallery.css";
 
@@ -75,3 +76,14 @@ function Gallery() {
 }
 
 export default Gallery;
+=======
+import React from 'react'
+
+function Gallery() {
+  return (
+    <div>Gallery</div>
+  )
+}
+
+export default Gallery
+>>>>>>> 1d39347 (local changes)

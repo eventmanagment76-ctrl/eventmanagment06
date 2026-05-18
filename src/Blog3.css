@@ -2,6 +2,10 @@
   background:#f4f6f8;
 }
 
+<<<<<<< HEAD
+=======
+/* HERO */
+>>>>>>> 1d39347 (local changes)
 .blog3-hero{
   height:420px;
   overflow:hidden;
@@ -13,6 +17,10 @@
   object-fit:cover;
 }
 
+<<<<<<< HEAD
+=======
+/* CONTAINER */
+>>>>>>> 1d39347 (local changes)
 .blog3-container{
   max-width:900px;
   margin:auto;
@@ -23,17 +31,29 @@
   box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
+<<<<<<< HEAD
+=======
+/* TITLE */
+>>>>>>> 1d39347 (local changes)
 .blog3-title{
   font-size:34px;
   margin-bottom:20px;
 }
 
+<<<<<<< HEAD
+=======
+/* INTRO */
+>>>>>>> 1d39347 (local changes)
 .blog3-intro{
   font-size:17px;
   margin-bottom:20px;
   color:#444;
 }
 
+<<<<<<< HEAD
+=======
+/* HEADINGS */
+>>>>>>> 1d39347 (local changes)
 .blog3 h2{
   margin-top:30px;
   font-size:24px;
@@ -44,12 +64,20 @@
   font-size:18px;
 }
 
+<<<<<<< HEAD
+=======
+/* TEXT */
+>>>>>>> 1d39347 (local changes)
 .blog3 p{
   color:#555;
   line-height:1.8;
   margin-bottom:15px;
 }
 
+<<<<<<< HEAD
+=======
+/* LIST */
+>>>>>>> 1d39347 (local changes)
 .blog3-list{
   padding-left:20px;
   margin:15px 0;
@@ -59,6 +87,10 @@
   margin-bottom:8px;
 }
 
+<<<<<<< HEAD
+=======
+/* RESPONSIVE */
+>>>>>>> 1d39347 (local changes)
 @media(max-width:768px){
   .blog3-container{
     padding:20px;
